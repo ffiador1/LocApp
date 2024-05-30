@@ -27,8 +27,8 @@ export function Homepage() {
       <header className="flex h-16 items-center justify-between px-6 border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900">
         <nav className="flex items-center gap-6">
           <Link className="flex items-center gap-2 text-lg font-semibold" href="#">
-            <img  src="imgs/logo.png"className="w-6 h-6"></img>
-            <span className="sr-only">Hair Salon</span>
+            <img  src="imgs/logo.png" className="w-6 h-8"></img>
+            <span className="sr-only">FloLocs</span>
           </Link>
           <Link className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300" href="#">
             Appointments
@@ -37,7 +37,7 @@ export function Homepage() {
             Services
           </Link>
           <Link className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300" href="#">
-            Stylists
+            Prices
           </Link>
         </nav>
         <div className="flex items-center gap-4">
@@ -46,9 +46,9 @@ export function Homepage() {
               alt="Avatar"
               className="rounded-full"
               height="32"
-              src="/placeholder.svg"
+              src="imgs/logo.png"
               style={{
-                aspectRatio: "32/32",
+                aspectRatio: "32/40",
                 objectFit: "cover",
               }}
               width="32"
@@ -61,9 +61,9 @@ export function Homepage() {
         <div className="container max-w-5xl px-4 md:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">Welcome to Hair Salon</h1>
+              <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">Welcome to FloLocs</h1>
               <p className="mt-4 text-gray-500 dark:text-gray-400 text-lg">
-                Discover the ultimate hair transformation experience.
+                Faux Locs by FloLocs
               </p>
             </div>
             <div className="flex items-center justify-end">
@@ -74,12 +74,13 @@ export function Homepage() {
           </div>
         </div>
       </section>
+     
       <main className="flex-1 bg-gray-100 dark:bg-gray-800 p-6 md:p-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div className="col-span-1 lg:col-span-2">
+        <div className="flex justify-center">
+          <div className="max-w-3xl w-full">
             <Card>
               <CardHeader className="flex items-center justify-between">
-                <CardTitle>Welcome to Hair Salon</CardTitle>
+                <CardTitle>Welcome to FloLocs</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -100,7 +101,7 @@ export function Homepage() {
                 </div>
               </CardContent>
               <CardFooter>
-                <Button className="w-full" variant="outline">
+                <Button variant="outline" className="w-full">
                   Book Appointment
                 </Button>
               </CardFooter>
@@ -109,15 +110,27 @@ export function Homepage() {
         </div>
       </main>
       <footer className="flex items-center justify-between px-6 py-4 border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900">
-        <div className="text-sm text-gray-500 dark:text-gray-400">© 2024 Hair Salon. All rights reserved.</div>
+        <div className="text-sm text-gray-500 dark:text-gray-400">&copy; 2024 FloLocs. All rights reserved.</div>
         <nav className="flex items-center gap-4">
-          <Link className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300" href="#">
+          <Link
+            href="#"
+            className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
+            prefetch={false}
+          >
             Privacy
           </Link>
-          <Link className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300" href="#">
+          <Link
+            href="#"
+            className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
+            prefetch={false}
+          >
             Terms
           </Link>
-          <Link className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300" href="#">
+          <Link
+            href="#"
+            className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
+            prefetch={false}
+          >
             Contact
           </Link>
         </nav>
