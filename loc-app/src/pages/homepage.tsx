@@ -18,6 +18,8 @@ To read more about using these font, please visit the Next.js documentation:
 - Pages Directory: https://nextjs.org/docs/pages/building-your-application/optimizing/fonts
 **/
 import Link from "next/link"
+import { Nav } from "@/components/nav"
+import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { CardTitle, CardHeader, CardContent, CardFooter, Card } from "@/components/ui/card"
 
@@ -25,21 +27,7 @@ export function Homepage() {
   return (
     <>
       <header className="flex h-16 items-center justify-between px-6 border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900">
-        <nav className="flex items-center gap-6">
-          <Link className="flex items-center gap-2 text-lg font-semibold" href="#">
-            <img  src="imgs/logo.png" className="w-6 h-8"></img>
-            <span className="sr-only">FloLocs</span>
-          </Link>
-          <Link className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300" href="#">
-            Appointments
-          </Link>
-          <Link className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300" href="#">
-            Services
-          </Link>
-          <Link className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300" href="#">
-            Prices
-          </Link>
-        </nav>
+        <Nav/>
         <div className="flex items-center gap-4">
           <Button className="rounded-full" size="icon" variant="ghost">
             <img
@@ -109,32 +97,7 @@ export function Homepage() {
           </div>
         </div>
       </main>
-      <footer className="flex items-center justify-between px-6 py-4 border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900">
-        <div className="text-sm text-gray-500 dark:text-gray-400">&copy; 2024 FloLocs. All rights reserved.</div>
-        <nav className="flex items-center gap-4">
-          <Link
-            href="#"
-            className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
-            prefetch={false}
-          >
-            Privacy
-          </Link>
-          <Link
-            href="#"
-            className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
-            prefetch={false}
-          >
-            Terms
-          </Link>
-          <Link
-            href="#"
-            className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
-            prefetch={false}
-          >
-            Contact
-          </Link>
-        </nav>
-      </footer>
+      <Footer/>
     </>
   )
 }
