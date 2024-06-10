@@ -34,7 +34,7 @@ export function Time() {
     <div className="flex h-16 items-center justify-between px-6 border-b border-brown-200 dark:border-brown-700 bg-white dark:bg-brown-900">
       <Nav />
     </div>
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-gradient-to-b from-[#8B4513]/20 to-[#D2B48C]/20 ">
+    <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-gradient-to-b from-[#8B4513]/20 to-[#D2B48C]/20 ">
       <h1 className="text-3xl font-bold mb-8">Book Your Hair Appointment</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
