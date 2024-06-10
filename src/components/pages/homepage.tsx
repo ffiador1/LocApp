@@ -78,7 +78,7 @@ export function Homepage() {
                     <p className="text-gray-500 dark:text-gray-400">
                       We are a premier hair salon dedicated to providing exceptional service and transformative hair
                       experiences. Our team of skilled stylists are passionate about helping you achieve your desired
-                      look, whether it's a classic cut, vibrant color, or trendy style.
+                      look, whether it&apos;s a classic cut, vibrant color, or trendy style.
                     </p>
                   </div>
                   <div>
