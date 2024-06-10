@@ -55,9 +55,11 @@ export function Homepage() {
               </p>
             </div>
             <div className="flex items-center justify-end">
-              <Button className="w-full md:w-auto" variant="outline">
-                Book Appointment
-              </Button>
+              <Link href="/appointments">
+                <Button className="w-full md:w-auto" variant="outline">
+                  Book Appointment
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -89,9 +91,11 @@ export function Homepage() {
                 </div>
               </CardContent>
               <CardFooter>
-                <Button variant="outline" className="w-full">
-                  Book Appointment
-                </Button>
+                <Link href="/appointments">
+                  <Button variant="outline" className="w-full">
+                    Book Appointment
+                  </Button>
+                </Link>
               </CardFooter>
             </Card>
           </div>
